@@ -2,7 +2,7 @@ google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 
 
-var myVar = setInterval(myTimer, 25)
+var myVar = setInterval(myTimer, 50)
 var controle = 0;
 var teste = [
     ['Valores', 'Variação'],
