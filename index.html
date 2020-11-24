@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- script para animação SVG -->
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+
+    <!-- script graficos google -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema PID | Wlamir</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-dados">
+
+            <div class="div-input-dados">
+                <div>
+                    <label for="sp">SP (0)</label>
+                    <input type="number" name="sp" id="sp" placeholder="SP" onchange="updateNumber1(this.value)" value="0">
+                </div>
+
+                <div>
+                    <label for="kd">KD (1)</label>
+                    <input type="number" name="kd" id="kd" placeholder="Kd" onchange="updateNumber2(this.value)" value="0">
+                </div>
+                <div>
+                    <label for="kp">KP (1)</label>
+                    <input type="number" name="kp" id="kp" placeholder="Kp" onchange="updateNumber3(this.value)" value="0">
+                </div>
+                <div>
+                    <label for="ki">KI (0)</label>
+                    <input type="number" name="ki" id="ki" placeholder="Ki" onchange="updateNumber4(this.value)" value="0">
+                </div>
+                <div>
+                    <label for="slider2">Nivel Desejado (?)</label>
+                    <input type="number" name="slider2" id="slider2" placeholder="slider2" onchange="updateSlider2(this.value)" value="50">
+                </div> 
+            </div>
+            <div class="div-grafico" id="div-grafico"></div>
+        </div>
+
+        <div class="div-animacao">
+            <!-- <input type="range" min="0" max="50" value="10" class="slider1" id="myRange1" onchange="updateSlider1(this.value)">
+            <input type="range" min="0" max="100" value="50" class="slider2" id="myRange2" onchange="updateSlider2(this.value)"> -->
+        </div>
+    </div>
+
+
+    <!-- script para rodar o gráfico por tempo -->
+    <script src="app.js"></script>
+</body>
+
+</html>
