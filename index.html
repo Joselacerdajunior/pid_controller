@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- script para animação SVG -->
+    <!-- SVG animation -->
     <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
 
-    <!-- script graficos google -->
+    <!-- Google graph -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <title>Sistema PID | Wlamir</title>
+    <title>PID System</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="container-dados">
+    <div class="countainer">
+        <div class="countainer-data">
 
-            <div class="div-input-dados">
+            <div class="div-input-data">
                 <div>
                     <label for="sp">SP (0)</label>
                     <input type="number" name="sp" id="sp" placeholder="SP" onchange="updateNumber1(this.value)" value="0">
@@ -43,10 +43,10 @@
                     <input type="number" name="slider2" id="slider2" placeholder="slider2" onchange="updateSlider2(this.value)" value="50">
                 </div> 
             </div>
-            <div class="div-grafico" id="div-grafico"></div>
+            <div class="div-graph" id="div-graph"></div>
         </div>
 
-        <div class="div-animacao">
+        <div class="div-animation">
             <!-- <input type="range" min="0" max="50" value="10" class="slider1" id="myRange1" onchange="updateSlider1(this.value)">
             <input type="range" min="0" max="100" value="50" class="slider2" id="myRange2" onchange="updateSlider2(this.value)"> -->
         </div>
